@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b, T;
+
+	cout << "請輸入要測試的次數: \n";
+	cin >> T;
+
+	while (T--) {
+		int sum = 0; /*重置sum讓輸出乾淨*/
+		cout << "請輸入區間: " << endl;
+		cin >> a >> b ;
+		for (int i = a; i <= b; i++) {
+			if (i % 2 == 1) {
+				sum = sum + i;
+			}
+		}
+		cout << sum << endl;
+	}
+
+	return 0;
+
+}
